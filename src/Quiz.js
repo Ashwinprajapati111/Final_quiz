@@ -53,7 +53,7 @@ const Quiz = () => {
             {data.map((a, index) => {
               return <>{a.num}</>;
             })}{" "}
-            of {indexx.length}
+            of {indexx.length+1 }
           </div>
           <div className="">1:00</div>
         </div>

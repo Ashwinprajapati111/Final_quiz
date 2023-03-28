@@ -1,49 +1,94 @@
 {
   "Mainquestions": [
     {
-      "Questions": "what is apple1",
+      "Questions": "Apple spelling",
       "options": [
-        "hari-op1", "krishna-op1", "swami-op1", "narayan-op1" 
+        "eaple", "Apple", "aple", "eple" 
       ],
-      "rightans": "krishna",
+      "rightans": "Apple",
       "id": 1,
       "num": 1
     },
     {
-      "Questions": "what is apple2",
+      "Questions": "2  + 5",
       "options": [
-        "hari-op2", "krishna-op2", "swami-op2", "narayan-op2" 
+        "6", "9", "7", "25" 
       ],
-      "rightans": "krishna",
+      "rightans": "7",
       "id": 2,
       "num": 2
     },
     {
-      "Questions": "what is apple3",
+      "Questions": "3 X 10",
       "options": [
-        "hari-op-3",  "krishna-op-3", "swami-op-3", "narayan-op-3" 
+        "25",  "55", "32", "30" 
       ],
       "rightans": "krishna",
       "id": 3,
       "num": 3
     },
     {
-      "Questions": "what is apple4",
+      "Questions": "11 X 2",
       "options": [
-        "hari-op4", "krishna-op4",  "swami-op4", "narayan-op4" 
+        "12", "22",  "30", "111" 
       ],
-      "rightans": "krishna5",
+      "rightans": "22",
       "id": 4,
       "num": 4
     },
     {
-      "Questions": "what is apple5",
+      "Questions": "2 X 2",
       "options": [
-        "hari-op5", "krishna-op5",  "swami-op5", "narayan-op5" 
+        "4", "22",  "5", "55" 
       ],
-      "rightans": "krishna",
-      "id": 4,
+      "rightans": "4",
+      "id": 5,
       "num": 5
+    },
+    {
+      "Questions": "5 X 5",
+      "options": [
+        "10", "25",  "50", "55" 
+      ],
+      "rightans": "25",
+      "id": 6,
+      "num": 6
+    },
+    {
+      "Questions": "20 X 4",
+      "options": [
+        "66", "70",  "60", "80" 
+      ],
+      "rightans": "80",
+      "id": 7,
+      "num": 7
+    },
+    {
+      "Questions": "120 + 5",
+      "options": [
+        "130", "140",  "144", "125" 
+      ],
+      "rightans": "125",
+      "id": 8,
+      "num": 8
+    },
+    {
+      "Questions": "2001-2",
+      "options": [
+        "1099", "2003",  "2010", "1452" 
+      ],
+      "rightans": "1099",
+      "id": 9,
+      "num": 9
+    },
+    {
+      "Questions": "8-2",
+      "options": [
+        "10", "6",  "4", "16" 
+      ],
+      "rightans": "6",
+      "id": 10,
+      "num": 10
     }
   ]
 }
