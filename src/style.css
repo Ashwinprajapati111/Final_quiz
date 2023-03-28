@@ -1,0 +1,147 @@
+body{
+    /* background-color: aqua; */
+    background-image: url("./bg.jpg");
+    z-index: 0;
+}
+.qmainbox{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    
+}
+
+
+
+/* footer starts*/
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: #f9ca00;
+    bottom: 0;
+    position: fixed;
+    z-index: 15;
+}
+/* footer ends */
+.Header{
+    background-color: #f9ca00;
+    background-image: url("./bg.jpg");
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.ttext{
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 15px;
+
+}
+@media only screen and (max-width: 700px) {
+    .ttext{
+        color: aliceblue;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 20px;
+
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .ttext{
+        color: aliceblue;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 10px;
+
+    }
+  }
+
+  /* quiz starts*/
+  .mai{
+    margin: 30px;
+    
+  }
+  .hr{
+    width:80%;
+    text-align:left;
+    margin-left:0;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+  .time{
+    color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+  }
+  .txtbox{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .qbox{
+    background-color: #f9ca00;
+    padding: 10px;
+  }
+  .nxtbtn{
+    background-color: #f9ca00; /* Green */
+    border: none;
+    color: rgb(29, 29, 29);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .obox{
+    background-color: rgb(255, 255, 255); /* Green */
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+}
+.obox:hover{
+    background-color: rgb(223, 223, 223); /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-decoration: none;
+
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+.obox:focus{
+    background-color: rgb(255, 196, 128); /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+  @media only screen and (max-width: 900px) {
+    .nxtbtn{
+        background-color: #f9ca00; /* Green */
+        border: none;
+        color: rgb(29, 29, 29);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+  }
+  /* quiz ends */

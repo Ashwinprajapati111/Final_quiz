@@ -1,0 +1,49 @@
+{
+  "Mainquestions": [
+    {
+      "Questions": "what is apple1",
+      "options": [
+        "hari-op1", "krishna-op1", "swami-op1", "narayan-op1" 
+      ],
+      "rightans": "krishna",
+      "id": 1,
+      "num": 1
+    },
+    {
+      "Questions": "what is apple2",
+      "options": [
+        "hari-op2", "krishna-op2", "swami-op2", "narayan-op2" 
+      ],
+      "rightans": "krishna",
+      "id": 2,
+      "num": 2
+    },
+    {
+      "Questions": "what is apple3",
+      "options": [
+        "hari-op-3",  "krishna-op-3", "swami-op-3", "narayan-op-3" 
+      ],
+      "rightans": "krishna",
+      "id": 3,
+      "num": 3
+    },
+    {
+      "Questions": "what is apple4",
+      "options": [
+        "hari-op4", "krishna-op4",  "swami-op4", "narayan-op4" 
+      ],
+      "rightans": "krishna5",
+      "id": 4,
+      "num": 4
+    },
+    {
+      "Questions": "what is apple5",
+      "options": [
+        "hari-op5", "krishna-op5",  "swami-op5", "narayan-op5" 
+      ],
+      "rightans": "krishna",
+      "id": 4,
+      "num": 5
+    }
+  ]
+}
