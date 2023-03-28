@@ -36,13 +36,14 @@ const Quiz = () => {
   const indexx = cdata.map((cd, index) => {
     return <>{index}</>;
   });
-  const [value, setValue] = React.useState('');
+  const [value, setValue] = useState('');
 
-  const handleChange = (event) => {
+  const handleRadioChange = (event) => {
     setValue(event.target.value);
   };
-  
-  console.log(value)
+  useEffect((a)=>{
+    console.log(value)
+  })
 
   return (
     <div>
@@ -53,7 +54,7 @@ const Quiz = () => {
             {data.map((a, index) => {
               return <>{a.num}</>;
             })}{" "}
-            of {indexx.length+1 }
+            of {indexx.length + 1}
           </div>
           <div className="">1:00</div>
         </div>
@@ -83,21 +84,20 @@ const Quiz = () => {
                         return (
                           <>
                             <Grid item xs={12} md={6} key={ad.id}>
-
-                              <RadioGroup className="obox"
+                              <RadioGroup
+                                className="obox"
                                 aria-labelledby="demo-radio-buttons-group-label"
                                 defaultValue="female"
                                 name="radio-buttons-group"
                                 value={value}
-                                onChange={handleChange}
+                                onClick={handleRadioChange}                                
                               >
                                 <FormControlLabel
                                   value={ad}
                                   control={<Radio />}
                                   label={ad}
+  
                                 />
-                                
-
                               </RadioGroup>
                             </Grid>
                           </>

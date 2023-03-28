@@ -28,11 +28,11 @@
       "num": 3
     },
     {
-      "Questions": "11 X 2",
+      "Questions": "11 X 3",
       "options": [
-        "12", "22",  "30", "111" 
+        "12", "27",  "33", "111" 
       ],
-      "rightans": "22",
+      "rightans": "33",
       "id": 4,
       "num": 4
     },
@@ -89,6 +89,15 @@
       "rightans": "6",
       "id": 10,
       "num": 10
+    }
+  ],
+  "result": [
+    {
+      
+      "options": [
+        "eaple", "Apple", "aple", "eple" 
+      ]
+
     }
   ]
 }
