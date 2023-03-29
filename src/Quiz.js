@@ -90,7 +90,8 @@ const Quiz = () => {
                                 defaultValue="female"
                                 name="radio-buttons-group"
                                 value={value}
-                                onClick={handleRadioChange}                                
+                                onClick={handleRadioChange}
+                                                                
                               >
                                 <FormControlLabel
                                   value={ad}
