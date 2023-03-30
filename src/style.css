@@ -15,11 +15,14 @@ body{
 /* footer starts*/
 .footer{
     width: 100%;
-    height: 200px;
+    height: 100px;
     background-color: #f9ca00;
     bottom: 0;
     position: fixed;
     z-index: 15;
+    text-align: center;
+    margin: auto;
+    padding-top: 40px;
 }
 /* footer ends */
 .Header{
@@ -145,3 +148,35 @@ body{
       }
   }
   /* quiz ends */
+  .container{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .texx{
+    margin-top: 40px;
+  }
+  .bttt{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .bttt:hover{
+    background-color: #62e667; /* Green */
+    color: black;
+
+  }
+  .btmain{
+    text-align: center;
+    margin-top: 10px;
+  }

@@ -1,27 +1,21 @@
-
-import './App.css';
-import Quiz from './Quiz'
+import "./App.css";
+import Quiz from "./Quiz";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Result from './Result'
-import Footer from './Footer';
-import Header from './Header';
+import Result from "./Result";
+import Footer from "./Footer";
+import Header from "./Header";
 
-
-function App() {
+function App(props) {
   return (
     <div>
       <BrowserRouter>
-      <Header/>
+        <Header />
         <Routes>
-        <Route path="/" element={<Quiz/>}/>
-        <Route path="/result" element={<Result/>}/>
-      
-        
-        
-      </Routes>
-      <Footer/>
+          <Route path="/" element={<Quiz />} />
+          <Route path="/Result" element={<Result test="this is test" />} />
+        </Routes>
+        <Footer />
       </BrowserRouter>
-      
     </div>
   );
 }
