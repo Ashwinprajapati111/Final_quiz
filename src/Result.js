@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import './style.css'
 
 const Result = (props) => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ const Result = (props) => {
   return (
     <div>
       <div className="container">
-        <h1>Congratulation</h1>
+        <h1 className="cong">Congratulation</h1>
         <h4 className="texx">Correct Answer: {props.score}/10</h4>
       </div>
       <div className="btmain">

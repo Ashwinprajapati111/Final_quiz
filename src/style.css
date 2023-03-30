@@ -47,6 +47,7 @@ body{
         padding-top: 20px;
 
     }
+    
   }
   @media only screen and (max-width: 400px) {
     .ttext{
@@ -56,6 +57,8 @@ body{
         padding-top: 10px;
 
     }
+
+
   }
 
   /* quiz starts*/
@@ -146,16 +149,19 @@ body{
         width: 100%;
         margin-bottom: 10px;
       }
+
   }
   /* quiz ends */
   .container{
     background-color: rgb(255, 255, 255);
-    width: 400px;
+    width: 80%;
     height: 200px;
     border-radius: 10px;
     text-align: center;
     margin-top: 100px;
+    padding-top: 20px;
   }
+
   .texx{
     margin-top: 40px;
   }
