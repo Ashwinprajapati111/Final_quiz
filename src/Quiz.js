@@ -11,11 +11,10 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 
-
 const Quiz = () => {
   const [num, setNum] = useState(0);
   const [score, setScore] = useState(0);
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState("");
   const navigate = useNavigate();
   const [data, setData] = useState([questions.Mainquestions[num]]);
   const [cdata, setCdata] = useState(questions.Mainquestions);
@@ -25,40 +24,31 @@ const Quiz = () => {
   });
   const handleRadioChange = (event) => {
     setValue(event.target.value);
-    // console.log(questions.Mainquestions[num-1].rightans)
-   };
+  };
 
   const nexxt = () => {
     setNum(num + 1);
-    setData([questions.Mainquestions[num+1]]);
-    let d = questions.Mainquestions[num].rightans === value 
-    console.log("true or false :"   + d) 
-
-    if(d === true) {
-      setScore(score+1)
+    setData([questions.Mainquestions[num + 1]]);
+    let d = questions.Mainquestions[num].rightans === value;
+    console.log("true or false :" + d);
+    if (d === true) {
+      setScore(score + 1);
     }
-    console.log("this is score :"+ score)
-
-
-
-
-    if (num === indexx.length) {
-      navigate("/result");    }
-
-
+    if (num+1 === indexx.length) {
+      navigate("/result");
+    }
   };
-
-
-
+  useEffect(() => {
+    console.log("this is score :" + score);
+ 
+  });
   return (
     <div>
       <div className="mai">
         <div className="d-flex justify-content-between time">
           <div className="">
             Quesion{" "}
-            {data.map((a, index) => {
-              return <>{a.num}</>;
-            })}{" "}
+            {num+1}{" "}
             of {indexx.length}
           </div>
           <div className="">1:00</div>
@@ -96,13 +86,11 @@ const Quiz = () => {
                                 name="radio-buttons-group"
                                 value={value}
                                 onClick={handleRadioChange}
-                                                                
                               >
                                 <FormControlLabel
                                   value={ad}
                                   control={<Radio />}
                                   label={ad}
-  
                                 />
                               </RadioGroup>
                             </Grid>
