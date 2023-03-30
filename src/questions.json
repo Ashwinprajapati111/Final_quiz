@@ -2,102 +2,74 @@
   "Mainquestions": [
     {
       "Questions": "Apple spelling",
-      "options": [
-        "eaple", "Apple", "aple", "eple" 
-      ],
+      "options": ["eaple", "Apple", "aple", "eple"],
       "rightans": "Apple",
       "id": 1,
       "num": 1
     },
     {
       "Questions": "2  + 5",
-      "options": [
-        "6", "9", "7", "25" 
-      ],
+      "options": ["6", "9", "7", "25"],
       "rightans": "7",
       "id": 2,
       "num": 2
     },
     {
       "Questions": "3 X 10",
-      "options": [
-        "25",  "55", "32", "30" 
-      ],
-      "rightans": "krishna",
+      "options": ["25", "55", "32", "30"],
+      "rightans": "30",
       "id": 3,
       "num": 3
     },
     {
       "Questions": "11 X 3",
-      "options": [
-        "12", "27",  "33", "111" 
-      ],
+      "options": ["12", "27", "33", "111"],
       "rightans": "33",
       "id": 4,
       "num": 4
     },
     {
       "Questions": "2 X 2",
-      "options": [
-        "4", "22",  "5", "55" 
-      ],
+      "options": ["4", "22", "5", "55"],
       "rightans": "4",
       "id": 5,
       "num": 5
     },
     {
       "Questions": "5 X 5",
-      "options": [
-        "10", "25",  "50", "55" 
-      ],
+      "options": ["10", "25", "50", "55"],
       "rightans": "25",
       "id": 6,
       "num": 6
     },
     {
       "Questions": "20 X 4",
-      "options": [
-        "66", "70",  "60", "80" 
-      ],
+      "options": ["66", "70", "60", "80"],
       "rightans": "80",
       "id": 7,
       "num": 7
     },
     {
       "Questions": "120 + 5",
-      "options": [
-        "130", "140",  "144", "125" 
-      ],
+      "options": ["130", "140", "144", "125"],
       "rightans": "125",
       "id": 8,
       "num": 8
     },
     {
       "Questions": "2001-2",
-      "options": [
-        "1099", "2003",  "2010", "1452" 
-      ],
+      "options": ["1099", "2003", "2010", "1452"],
       "rightans": "1099",
       "id": 9,
       "num": 9
     },
     {
       "Questions": "8-2",
-      "options": [
-        "10", "6",  "4", "16" 
-      ],
+      "options": ["10", "6", "4", "16"],
       "rightans": "6",
       "id": 10,
       "num": 10
     }
-  ],
-  "result": [
-    {
-      
-      "options": [
-        "eaple", "Apple", "aple", "eple" 
-      ]
-
-    }
   ]
+
 }

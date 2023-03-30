@@ -11,39 +11,44 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "center",
-  color: theme.palette.text.secondary,
-}));
 
 const Quiz = () => {
-  const [num, setNum] = useState(1);
-  const nexxt = () => {
-    setNum(num + 1);
-    console.log(num);
-    setData([questions.Mainquestions[num]]);
-    if (num === indexx.length) {
-      navigate("/result");
-    }
-  };
+  const [num, setNum] = useState(0);
+  const [score, setScore] = useState(0);
+  const [value, setValue] = useState('');
   const navigate = useNavigate();
-  const [data, setData] = useState([questions.Mainquestions[0]]);
+  const [data, setData] = useState([questions.Mainquestions[num]]);
   const [cdata, setCdata] = useState(questions.Mainquestions);
 
   const indexx = cdata.map((cd, index) => {
     return <>{index}</>;
   });
-  const [value, setValue] = useState('');
-
   const handleRadioChange = (event) => {
     setValue(event.target.value);
+    // console.log(questions.Mainquestions[num-1].rightans)
+   };
+
+  const nexxt = () => {
+    setNum(num + 1);
+    setData([questions.Mainquestions[num+1]]);
+    let d = questions.Mainquestions[num].rightans === value 
+    console.log("true or false :"   + d) 
+
+    if(d === true) {
+      setScore(score+1)
+    }
+    console.log("this is score :"+ score)
+
+
+
+
+    if (num === indexx.length) {
+      navigate("/result");    }
+
+
   };
-  useEffect((a)=>{
-    console.log(value)
-  })
+
+
 
   return (
     <div>
@@ -54,7 +59,7 @@ const Quiz = () => {
             {data.map((a, index) => {
               return <>{a.num}</>;
             })}{" "}
-            of {indexx.length + 1}
+            of {indexx.length}
           </div>
           <div className="">1:00</div>
         </div>
