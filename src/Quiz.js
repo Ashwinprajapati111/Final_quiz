@@ -1,34 +1,32 @@
 import React, { useState, useEffect } from "react";
-import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import "./style.css";
-import Button from "@mui/material/Button";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import questions from "./questions.json";
-import { useNavigate } from "react-router-dom";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Result from "./Result";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const Quiz = () => {
+
   const [num, setNum] = useState(0);
   const [score, setScore] = useState(0);
   const [value, setValue] = useState("");
-  const [quizz, setquizz] = useState(true);
   const [result, setresult] = useState(false);
   const [data, setData] = useState([questions.Mainquestions[num]]);
   const [cdata, setCdata] = useState(questions.Mainquestions);
   const [sub, setsub] = useState("Next");
-
+  let [count, setcount] = useState(5);
   const indexx = cdata.map((cd, index) => {
     return <>{index}</>;
   });
   const handleRadioChange = (event) => {
     setValue(event.target.value);
   };
-  // const navigate = useNavigate();
   const nexxt = () => {
     setNum(num + 1);
     setData([questions.Mainquestions[num + 1]]);
@@ -40,23 +38,27 @@ const Quiz = () => {
     if (num + 1 >= indexx.length) {
       setresult(true);
       console.log(score);
-      // navigate("/result", { state: { id: score, num: sub } });
     }
   };
-  useEffect((a) => {
-    console.log(score);
-  });
+  console.log(count);
+  useEffect(() => {
+    const timer = count > 0 && setInterval(() => setcount(count - 1), 1000);
+    return () => clearInterval(timer);
+  }, [count]);
+
   return (
+    
     <div>
+      <Header/>
       {result ? (
-        <Result score={score} setresult={setresult} result={result}/>
+        <Result score={score} setresult={setresult} result={result} />
       ) : (
         <div className="mai">
           <div className="d-flex justify-content-between time">
             <div className="">
               Quesion {num + 1} of {indexx.length}
             </div>
-            <div className="">1:00</div>
+            <div className="">{count}</div>
           </div>
           <hr className="hr" />
           <Box className="qmainbox" sx={{ width: "60%" }}>
@@ -117,6 +119,7 @@ const Quiz = () => {
           </Box>
         </div>
       )}
+    <Footer />
     </div>
   );
 };

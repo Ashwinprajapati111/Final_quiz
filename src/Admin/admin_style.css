@@ -1,0 +1,21 @@
+.admin_style{
+    background-color: #f9ca00!important;
+}
+.editic{
+    background-color: rgb(60, 0, 199);
+    padding: 5px;
+    margin-right: 10px;
+    display: inline-flex;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 0px;
+}
+.delic{
+    background-color: rgb(177, 0, 0);
+    padding: 5px;
+    margin-right: 10px;
+    display: inline-flex;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 0px;
+}

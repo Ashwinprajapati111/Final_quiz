@@ -25,7 +25,7 @@ body{
     padding-top: 40px;
 }
 /* footer ends */
-.Header{
+.Header_{
     background-color: #f9ca00;
     background-image: url("./bg.jpg");
     width: 100%;
@@ -158,15 +158,16 @@ body{
     height: 200px;
     border-radius: 10px;
     text-align: center;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     padding-top: 20px;
   }
-
-  .texx{
-    margin-top: 40px;
+  .container-header{
+    margin-top: 0px;
   }
+
+
   .bttt{
-    background-color: #4CAF50; /* Green */
+    background-color: #006904; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -185,4 +186,27 @@ body{
   .btmain{
     text-align: center;
     margin-top: 10px;
+  }
+  .rate{
+    margin-top: 10px;
+  }
+  .texx-success{
+    margin-top: 22px;
+    color: rgb(255, 255, 255);
+    background-color: #006904;
+    padding: 10px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+  }
+  .texx-fail{
+    margin-top: 22px;
+    color: rgb(255, 255, 255);
+    background-color: #990000;
+    padding: 10px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
   }
