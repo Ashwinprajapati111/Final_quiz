@@ -10,6 +10,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Result from "./Result";
 import Header from "./Header";
 import Footer from "./Footer";
+import Admin_header from "./Admin/Admin_header";
 
 const Quiz = () => {
 
@@ -47,9 +48,13 @@ const Quiz = () => {
   }, [count]);
 
   return (
+    <>
     
     <div>
-      <Header/>
+    <Admin_header />
+    </div>
+    <div className="main-container">
+    <div className="main">
       {result ? (
         <Result score={score} setresult={setresult} result={result} />
       ) : (
@@ -119,8 +124,11 @@ const Quiz = () => {
           </Box>
         </div>
       )}
-    <Footer />
+</div>
     </div>
+
+        <Footer />
+    </>
   );
 };
 

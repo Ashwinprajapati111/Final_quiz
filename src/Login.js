@@ -3,6 +3,7 @@ import "./login.css";
 import Loginsub from "./Loginsub";
 import Signupsub from "./Signupsub";
 import Admin_header from "./Admin/Admin_header";
+import Footer from "../src/Footer";
 
 const Login = () => {
   const [showlogin, setshowlogin] = useState(true);
@@ -30,6 +31,7 @@ const Login = () => {
       </div>
       {showlogin && <Loginsub btnlogin={btnlogin} />}
       {showsignup && <Signupsub btnsignup={btnsignup} />}
+      <Footer />
     </div>
   );
   };

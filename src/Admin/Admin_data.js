@@ -6,6 +6,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import Footer from "../Footer";
 import Admin_header from "./Admin_header";
 
 function createData(name, calories, fat, carbs, protein) {
@@ -71,6 +72,7 @@ const User_data = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

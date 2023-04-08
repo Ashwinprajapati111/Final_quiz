@@ -11,6 +11,7 @@ import axios from "axios";
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import './admin_style.css'
+import Footer from "../Footer";
 
 const User_data = () => {
   const mydata = () => {
@@ -90,7 +91,9 @@ const User_data = () => {
             </div>
           </div>
         </div>
+        
       </div>
+      <Footer/>
     </>
   );
 };

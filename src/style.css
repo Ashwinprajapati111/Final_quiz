@@ -9,9 +9,6 @@ body{
     text-align: center;
     
 }
-
-
-
 /* footer starts*/
 .footer{
     width: 100%;
@@ -209,4 +206,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     font-size: 18px;
+  }
+  .msg{
+    color: #990000;
   }

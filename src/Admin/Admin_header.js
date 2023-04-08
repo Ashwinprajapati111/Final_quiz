@@ -7,10 +7,12 @@ import './admin_header.css'
 
 const Admin_header = () => {
   const pages = [
-    { id: "01", name: "Login", link: "/login" },
+    { id: "02", name: "Quiz", link: "/quiz" },
+    { id: "01", name: "Login", link: "/" },
     { id: "01", name: "Admin", link: "/Admin_data" },
     { id: "02", name: "User", link: "/User_data" },
-    { id: "02", name: "Log Out", link: "/" },
+    { id: "02", name: "Log Out", link: "/" }
+
   ];
 
   return (
